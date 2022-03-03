@@ -1,18 +1,11 @@
 package com.buildExample;
-
-//import org.json.JSONObject;
 import  org.json.simple.JSONObject;
-//import org.json.simple.JSONObject;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class FizzBuzzJson {
 
-    public static void main(String[] args) {
-        fizzBuzzJson(89, 10);
-    }
-
-    private static void fizzBuzzJson(int a, int b){
+    public static void fizzBuzzJson(int a, int b){
         //Creating a JSONObject object
         JSONObject jsonObject = new JSONObject();
 
@@ -38,8 +31,6 @@ public class FizzBuzzJson {
         jsonObject.put("FizzBuzz", fizzBuzzCount);
 
         try {
-//            FileWriter file = new FileWriter("D:\\Users\\atedros\\OneDrive - " +
-//                    "Capgemini\\Desktop\\Java-tut\\Java-Aca\\Java-Fundamentals\\outputJson.json");
             FileWriter file = new FileWriter("Java-Fundamentals\\outputJson.json");
             file.write(jsonObject.toJSONString());
             file.close();

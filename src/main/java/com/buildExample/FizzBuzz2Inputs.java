@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class FizzBuzz2Inputs {
 
-  public static void main(String[] args) {
-    fizzBuzzInputs();
-  }
 
-  private static void fizzBuzzInputs() {
+
+  public static void fizzBuzzInputs() {
 
     int fizzCount = 0, buzzCount = 0, fizzBuzzCount = 0;
 
