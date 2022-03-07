@@ -1,12 +1,13 @@
-import static com.buildExample.FizzBuzz2Inputs.fizzBuzzInputs;
-import static com.buildExample.FizzBuzzArguments.fizzBuzzArguments;
-import static com.buildExample.FizzBuzzJson.fizzBuzzJson;
+import com.buildExample.FizzBuzz;
+import com.buildExample.FizzBuzz2Inputs;
+import com.buildExample.FizzBuzzArguments;
+import com.buildExample.FizzBuzzJson;
 
 public class Main {
     public static void main(String[] args) {
-        fizzBuzzJson(89, 10);
-        fizzBuzzArguments(300, 100);
-//        fizzBuzzInputs();
-
+        FizzBuzz2Inputs.fizzBuzzInputs();
+        FizzBuzz.fizzBuzz(15);
+        FizzBuzzArguments.fizzBuzzArguments(30, 100);
+        FizzBuzzJson.fizzBuzzJson(200, 10);
     }
 }

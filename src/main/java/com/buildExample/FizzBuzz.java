@@ -1,26 +1,22 @@
 package com.buildExample;
 
 public class FizzBuzz {
-
-  public static void main(String[] args) {
-    System.out.println(fizzBuzz(8));
-    System.out.println(fizzBuzz(15));
-    System.out.println(fizzBuzz(9));
-    System.out.println(fizzBuzz(10));
-  }
-
-  private static String fizzBuzz(int num) {
+  public static String fizzBuzz(int num) {
+    StringBuilder fizzBuzzVal = new StringBuilder();
     if (num % 15== 0) {
-      return "FizzBuzz";
+      fizzBuzzVal.append("FizzBuzz");
     }
-    if (num % 3 == 0) {
-      return "Fizz";
-    } else if (num % 5 == 0) {
-      return "Buzz";
+    else if (num % 3 == 0) {
+      fizzBuzzVal.append("Fizz");
+    }
+    else if (num % 5 == 0) {
+      fizzBuzzVal.append("Buzz");
     } else {
       //changing int to string
-      return String.valueOf(num);
+      fizzBuzzVal.append(num);
     }
+    System.out.println("The number is: " + fizzBuzzVal);
+    return fizzBuzzVal.toString();
   }
 
 }
