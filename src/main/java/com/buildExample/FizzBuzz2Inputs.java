@@ -32,7 +32,9 @@ public class FizzBuzz2Inputs {
 
       smaller++;
     }
+
     System.out.println("Fizz: " + fizzCount + "\n" + "Buzz: " + buzzCount + "\n" + "FIzzBuzz: " + fizzBuzzCount);
+      System.out.println("------------------------------------");
   }
 
 

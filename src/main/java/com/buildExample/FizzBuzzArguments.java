@@ -17,7 +17,10 @@ public class FizzBuzzArguments {
       }
       smaller++;
     }
-    System.out.println("Fizz: " + fizzCount + "\n" + "Buzz: " + buzzCount + "\n" + "FIzzBuzz: " + fizzBuzzCount);
+
+    System.out.println("Fizz: " + fizzCount + "\n" + "Buzz: " + buzzCount +
+            "\n" + "FIzzBuzz: " + fizzBuzzCount + "\n");
+    System.out.println("------------------------------------");
   }
 
 }

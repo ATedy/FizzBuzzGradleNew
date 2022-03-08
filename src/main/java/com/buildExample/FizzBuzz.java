@@ -15,7 +15,10 @@ public class FizzBuzz {
       //changing int to string
       fizzBuzzVal.append(num);
     }
+
     System.out.println("The number is: " + fizzBuzzVal);
+    System.out.println("------------------------------------");
+
     return fizzBuzzVal.toString();
   }
 
